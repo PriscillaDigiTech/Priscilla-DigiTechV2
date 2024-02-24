@@ -1,0 +1,113 @@
+header {
+  padding: 20px 0;
+  background: url(../img/bg-header.webp) fixed center/cover;
+
+  nav {
+    width: 85%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    align-items: center;
+    background: $color1;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px $blackShadow;
+    position: relative;
+
+    @media screen and (max-width: 1296px) {
+      grid-template-columns: 1fr;
+      align-items: center;
+      position: relative;
+    }
+
+    .homeReturn {
+      text-align: left;
+      width: 150px;
+      position: absolute;
+      left: 20px;
+      transition: 0.2s;
+
+      &:hover {
+        transform: translateY(-5px);
+      }
+
+      @media screen and (max-width: 1296px) {
+        position: static;
+        margin: 10px;
+        z-index: 1000;
+        text-align: center;
+      }
+
+      img {
+        width: 150px;
+        filter: drop-shadow(1px 1px 1px $blackShadow);
+      }
+    }
+  }
+
+  .menu-icons {
+    display: none;
+
+    @media screen and (max-width: 1296px) {
+      display: block;
+      align-items: center;
+      text-align: right;
+      position: absolute;
+      top: 70px;
+      right: 50px;
+      color: $white1;
+
+      i {
+        font-size: 2rem;
+        text-shadow: 1px 1px 1px $blackShadow;
+      }
+      #close-icon {
+        display: none;
+      }
+    }
+  }
+
+  ul {
+    margin: 30px auto 30px 200px;
+    display: flex;
+    justify-content: space-around;
+
+    @media screen and (max-width: 1296px) {
+      display: none;
+      width: 85%;
+      margin: 0 auto;
+    }
+
+    li {
+      width: 150px;
+      list-style: none;
+      padding: 0 10px;
+      transition: 0.2s;
+
+      @media screen and (max-width: 1296px) {
+        padding: 10px 0;
+        border-bottom: 1px solid #f1f1f1;
+        width: auto;
+      }
+
+      a {
+        color: $white1;
+        text-decoration: none;
+      }
+      &:hover {
+        transform: translateY(-5px);
+
+        @media screen and (max-width: 1296px) {
+          transform: translateY(0);
+        }
+      }
+    }
+  }
+
+  .hero {
+    width: 85%;
+    margin: 0 auto 30px;
+    padding: 50px 20px;
+    background: $blackShadow;
+    color: $white1;
+  }
+}
