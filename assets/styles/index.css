@@ -18,7 +18,7 @@
   font-family: poppins-regular, "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   font-size: 1rem;
 }
-@media screen and (max-width: 1296px) {
+@media screen and (max-width: 675px) {
   * {
     font-size: 0.9rem;
   }
@@ -58,6 +58,9 @@ body h6 {
 }
 body h2 {
   font-size: 1.5rem;
+}
+body h3 {
+  font-size: 1.4rem;
 }
 
 header {
@@ -182,12 +185,116 @@ header .hero {
   width: 85%;
   margin: 0 auto 30px;
   padding: 50px 20px;
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.95);
   color: #000000;
   border-radius: 20px;
 }
 
-.section {
+.avantages {
+  margin: 50px auto 30px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+@media screen and (max-width: 1185px) {
+  .avantages {
+    grid-template-columns: 1fr;
+  }
+}
+.avantages .avantage {
+  border: 2px solid #fa255e;
+  border-radius: 20px;
+  -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+          box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+  margin: 0 10px;
+  padding: 20px;
+  position: relative;
+}
+@media screen and (max-width: 1185px) {
+  .avantages .avantage {
+    margin: 30px auto;
+  }
+}
+.avantages .avantage h3 {
+  margin-top: 30px;
+}
+.avantages .avantage i {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #fa255e;
+  border: 2px solid #fa255e;
+  padding: 20px;
+  border-radius: 350px;
+  font-size: 2rem;
+  background: #fff;
+  -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+          box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+.services {
+  background: url(../img/bg3.webp) fixed center/cover;
+  width: 100%;
+}
+.services h2 {
+  color: #fff;
+}
+.services .services-container {
+  width: 85%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+@media screen and (max-width: 1185px) {
+  .services .services-container {
+    grid-template-columns: 1fr;
+  }
+}
+.services .services-container a {
+  text-decoration: none;
+  border-radius: 20px;
+  -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+          box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+  background: rgba(255, 255, 255, 0.95);
+  padding: 20px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.services .services-container a:hover {
+  background: #fa255e;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+@media screen and (max-width: 1185px) {
+  .services .services-container a:hover {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+.services .services-container a:hover i,
+.services .services-container a:hover h3 {
+  color: #fff;
+}
+.services .services-container a i {
+  font-size: 2rem;
+  color: #fa255e;
+  padding-bottom: 20px;
+}
+.services .services-container a ul li {
+  list-style: none;
+  color: #333;
+  text-align: left;
+  padding-bottom: 10px;
+}
+.services .services-container a ul li i {
+  padding-right: 5px;
+  font-size: 1rem;
+  padding-bottom: 0;
+}
+
+section {
   width: 85%;
   margin: 0 auto;
   padding: 50px 20px;
