@@ -631,6 +631,7 @@ main section #portfolio-container a:hover {
 }
 main section #portfolio-container a:hover h4 {
   color: #fff;
+  padding-bottom: 10px;
 }
 main section #portfolio-container a div {
   display: -webkit-box;
@@ -649,12 +650,12 @@ main section #portfolio-container a div img {
   margin-bottom: 10px;
 }
 main section #portfolio-container a div h4 {
-  padding-top: 15px;
+  padding: 15px 0 10px 0;
   color: #fa255e;
   font-size: 1.2rem;
 }
 main section #portfolio-container a div p {
-  padding: 15px 0 30px 0;
+  padding-bottom: 30px;
   color: #333;
 }
 main section #portfolio-container a div p small {
