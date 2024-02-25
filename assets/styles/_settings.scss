@@ -64,7 +64,6 @@ body {
       color: $color1;
     }
   }
-
   h1,
   h2,
   h3,
@@ -75,11 +74,28 @@ body {
     padding-bottom: 30px;
   }
 
+  h1 {
+    font-size: 2rem;
+    padding-bottom: 0;
+
+    @media screen and (max-width: 675px) {
+      font-size: 1.6rem;
+    }
+  }
+
   h2 {
     font-size: 1.5rem;
+
+    @media screen and (max-width: 675px) {
+      font-size: 1.3rem;
+    }
   }
 
   h3 {
     font-size: 1.4rem;
+
+    @media screen and (max-width: 675px) {
+      font-size: 1.2rem;
+    }
   }
 }

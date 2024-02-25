@@ -56,11 +56,30 @@ body h6 {
   color: #fa255e;
   padding-bottom: 30px;
 }
+body h1 {
+  font-size: 2rem;
+  padding-bottom: 0;
+}
+@media screen and (max-width: 675px) {
+  body h1 {
+    font-size: 1.6rem;
+  }
+}
 body h2 {
   font-size: 1.5rem;
 }
+@media screen and (max-width: 675px) {
+  body h2 {
+    font-size: 1.3rem;
+  }
+}
 body h3 {
   font-size: 1.4rem;
+}
+@media screen and (max-width: 675px) {
+  body h3 {
+    font-size: 1.2rem;
+  }
 }
 
 header {
@@ -359,4 +378,285 @@ footer .social-icons i:hover {
             transform: translateY(0);
     color: #000000;
   }
+}
+
+main {
+  background: #fff;
+}
+main section h2 {
+  padding: 30px 0;
+  font-size: 1.6rem;
+}
+@media screen and (max-width: 1153px) {
+  main section h2 {
+    font-size: 1.4rem;
+  }
+}
+main section .intro a {
+  color: #fa255e;
+  text-decoration: none;
+}
+main section .intro a:hover {
+  color: #000000;
+}
+main section #services-list {
+  grid-template-columns: 1fr 1fr;
+}
+main section #services-list-3 {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+main section #services-list,
+main section #services-list-3 {
+  display: grid;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 1153px) {
+  main section #services-list,
+  main section #services-list-3 {
+    grid-template-columns: 1fr;
+  }
+}
+main section #services-list div,
+main section #services-list-3 div {
+  padding: 30px;
+  -webkit-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+}
+main section #services-list div i,
+main section #services-list-3 div i {
+  color: #fa255e;
+  padding-bottom: 20px;
+  font-size: 2rem;
+}
+main section #services-list div h3,
+main section #services-list-3 div h3 {
+  color: #fa255e;
+  padding-bottom: 20px;
+}
+main section .article {
+  text-align: justify;
+}
+main section .conclusion p {
+  margin-top: 30px;
+}
+main section .CTA {
+  margin-top: 30px;
+  border-top: 1px dotted #fa255e;
+}
+main section .CTA p {
+  padding-bottom: 30px;
+}
+main section .CTA button a {
+  color: #fa255e;
+  text-decoration: none;
+}
+main section .services1 {
+  width: 100%;
+}
+main section .services1 h2 {
+  color: #fff;
+}
+main section .services1 .services-container1 {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+@media screen and (max-width: 1185px) {
+  main section .services1 .services-container1 {
+    grid-template-columns: 1fr;
+  }
+}
+main section .services1 .services-container1 a {
+  text-decoration: none;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.25);
+  padding: 30px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+main section .services1 .services-container1 a:hover {
+  background: #fa255e;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+@media screen and (max-width: 1185px) {
+  main section .services1 .services-container1 a:hover {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+main section .services1 .services-container1 a:hover i,
+main section .services1 .services-container1 a:hover h3 {
+  color: #fff;
+}
+main section .services1 .services-container1 a i {
+  font-size: 2rem;
+  color: #fa255e;
+  padding-bottom: 20px;
+}
+main section .services1 .services-container1 a ul li {
+  list-style: none;
+  color: #333;
+  text-align: left;
+  padding-bottom: 10px;
+}
+main section .services1 .services-container1 a ul li i {
+  padding-right: 5px;
+  font-size: 1rem;
+  padding-bottom: 0;
+}
+main section #about-list .grid-about-left,
+main section #about-list .grid-about-right {
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: left;
+  margin: 30px auto;
+  gap: 20px;
+}
+main section #about-list .grid-about-left div,
+main section #about-list .grid-about-right div {
+  padding: 0 20px;
+}
+@media screen and (max-width: 1153px) {
+  main section #about-list .grid-about-left div,
+  main section #about-list .grid-about-right div {
+    padding: 0;
+    text-align: center;
+  }
+}
+main section #about-list .grid-about-left div img,
+main section #about-list .grid-about-right div img {
+  width: 100%;
+}
+@media screen and (max-width: 1153px) {
+  main section #about-list .grid-about-left div img,
+  main section #about-list .grid-about-right div img {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+main section #about-list .grid-about-left div h4,
+main section #about-list .grid-about-right div h4 {
+  padding-bottom: 10px;
+  color: #fa255e;
+  font-size: 1.3rem;
+}
+@media screen and (max-width: 1153px) {
+  main section #about-list .grid-about-left div h4,
+  main section #about-list .grid-about-right div h4 {
+    text-align: center;
+  }
+}
+main section #about-list .grid-about-left div p,
+main section #about-list .grid-about-right div p {
+  text-align: justify;
+  padding-bottom: 20px;
+}
+@media screen and (max-width: 1153px) {
+  main section #about-list .grid-about-left div p,
+  main section #about-list .grid-about-right div p {
+    text-align: center;
+  }
+}
+main section #about-list .grid-about-left div p span,
+main section #about-list .grid-about-right div p span {
+  color: #fa255e;
+  font-family: poppins-medium, "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+main section #about-list .grid-about-left {
+  grid-template-columns: 20% 80%;
+}
+@media screen and (max-width: 1153px) {
+  main section #about-list .grid-about-left {
+    grid-template-columns: 1fr;
+  }
+}
+main section #about-list .grid-about-right {
+  grid-template-columns: 80% 20%;
+}
+@media screen and (max-width: 1153px) {
+  main section #about-list .grid-about-right {
+    grid-template-columns: 1fr;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+main section #about-list li {
+  list-style: none;
+  color: #333;
+}
+@media screen and (max-width: 1153px) {
+  main section #about-list li {
+    text-align: center;
+  }
+}
+main section #about-list li i {
+  color: #fa255e;
+}
+main section #legal {
+  text-align: justify;
+}
+main section #legal a {
+  color: #fa255e;
+  text-decoration: none;
+}
+main section #legal a:hover {
+  color: #000000;
+}
+main section #legal ul {
+  padding: 10px 0;
+  list-style-position: inside;
+}
+main section #legal ul li {
+  color: #333;
+}
+main section #portfolio-container a {
+  padding: 0;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+main section #portfolio-container a:hover {
+  overflow: hidden;
+}
+main section #portfolio-container a:hover h4 {
+  color: #fff;
+}
+main section #portfolio-container a div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+main section #portfolio-container a div img {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+  margin-bottom: 10px;
+}
+main section #portfolio-container a div h4 {
+  padding-top: 15px;
+  color: #fa255e;
+  font-size: 1.2rem;
+}
+main section #portfolio-container a div p {
+  padding: 15px 0 30px 0;
+  color: #333;
+}
+main section #portfolio-container a div p small {
+  font-size: 0.8rem;
 }/*# sourceMappingURL=index.css.map */
