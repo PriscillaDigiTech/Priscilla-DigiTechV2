@@ -229,6 +229,10 @@ main section .intro a:hover {
 }
 main section .article {
   text-align: justify;
+  margin-top: 30px;
+}
+main section .article p {
+  padding-bottom: 20px;
 }
 main section .conclusion p {
   margin-top: 30px;
