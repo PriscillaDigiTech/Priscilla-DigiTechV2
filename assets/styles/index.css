@@ -243,11 +243,13 @@ main section .intro a:hover {
   color: #000000;
 }
 main section .article {
-  text-align: justify;
-  margin-top: 30px;
+  text-align: left;
 }
 main section .article p {
   padding-bottom: 20px;
+}
+main section .article-blog {
+  margin-top: 30px;
 }
 main section .conclusion p {
   margin-top: 30px;
@@ -737,7 +739,7 @@ footer .social-icons i:hover {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
 }
-@media screen and (max-width: 1153px) {
+@media screen and (max-width: 850px) {
   .blog .blog-container {
     grid-template-columns: 1fr;
   }
@@ -756,7 +758,7 @@ footer .social-icons i:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }
-@media screen and (max-width: 1185px) {
+@media screen and (max-width: 850px) {
   .blog .blog-container a:hover {
     -webkit-transform: scale(1);
             transform: scale(1);
@@ -892,7 +894,10 @@ footer .social-icons i:hover {
 }
 
 #legal {
-  text-align: justify;
+  text-align: left;
+}
+#legal h2 {
+  margin-top: 30px;
 }
 #legal a {
   color: #fa255e;

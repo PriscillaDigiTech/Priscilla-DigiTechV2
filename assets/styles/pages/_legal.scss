@@ -1,6 +1,9 @@
 #legal {
-  text-align: justify;
+  text-align: left;
 
+  h2 {
+    margin-top: 30px;
+  }
   a {
     color: $color1;
     text-decoration: none;
