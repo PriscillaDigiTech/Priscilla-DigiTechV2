@@ -96,6 +96,10 @@ header {
         padding: 10px 0;
         border-bottom: 1px solid #f1f1f1;
         width: auto;
+
+        &:last-of-type {
+          border-radius: 20px;
+        }
       }
 
       a {

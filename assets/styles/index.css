@@ -197,6 +197,9 @@ header ul li {
     border-bottom: 1px solid #f1f1f1;
     width: auto;
   }
+  header ul li:last-of-type {
+    border-radius: 20px;
+  }
 }
 header ul li a {
   color: #fff;
@@ -337,17 +340,25 @@ footer .social-icons i:hover {
   }
 }
 
-.avantages {
+.avantages,
+.nous-contacter-wrapper {
+  width: 85%;
   margin: 50px auto 30px auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
 }
 @media screen and (max-width: 1185px) {
-  .avantages {
+  .avantages,
+  .nous-contacter-wrapper {
     grid-template-columns: 1fr;
   }
 }
-.avantages .avantage {
+.avantages .avantage,
+.avantages .contact-container-accueil,
+.nous-contacter-wrapper .avantage,
+.nous-contacter-wrapper .contact-container-accueil {
+  width: 100%;
   border: 2px solid #fa255e;
   border-radius: 20px;
   -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
@@ -357,14 +368,23 @@ footer .social-icons i:hover {
   position: relative;
 }
 @media screen and (max-width: 1185px) {
-  .avantages .avantage {
+  .avantages .avantage,
+  .avantages .contact-container-accueil,
+  .nous-contacter-wrapper .avantage,
+  .nous-contacter-wrapper .contact-container-accueil {
     margin: 30px auto;
   }
 }
-.avantages .avantage h3 {
+.avantages .avantage h3,
+.avantages .contact-container-accueil h3,
+.nous-contacter-wrapper .avantage h3,
+.nous-contacter-wrapper .contact-container-accueil h3 {
   margin-top: 30px;
 }
-.avantages .avantage i {
+.avantages .avantage i,
+.avantages .contact-container-accueil i,
+.nous-contacter-wrapper .avantage i,
+.nous-contacter-wrapper .contact-container-accueil i {
   position: absolute;
   top: 0;
   left: 50%;
@@ -388,9 +408,6 @@ footer .social-icons i:hover {
   .services {
     background: url(../img/bg3.webp) center/cover;
   }
-}
-.services h2 {
-  color: #fff;
 }
 .services .services-container {
   width: 85%;
@@ -487,6 +504,22 @@ footer .social-icons i:hover {
 }
 .portfolio .portfolio-container a h3 {
   padding: 15px 20px;
+}
+
+.nous-contacter {
+  width: 100%;
+  background: url(../img/bg2.webp) fixed center/cover;
+}
+.nous-contacter .nous-contacter-wrapper .contact-container-accueil {
+  background: #fff;
+}
+.nous-contacter .nous-contacter-wrapper .contact-container-accueil a {
+  color: #333;
+  text-decoration: none;
+  cursor: pointer;
+}
+.nous-contacter .nous-contacter-wrapper .contact-container-accueil a:hover {
+  color: #fa255e;
 }
 
 #about-list .grid-about-left,

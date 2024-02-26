@@ -1,13 +1,18 @@
-.avantages {
+.avantages,
+.nous-contacter-wrapper {
+  width: 85%;
   margin: 50px auto 30px auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
 
   @media screen and (max-width: 1185px) {
     grid-template-columns: 1fr;
   }
 
-  .avantage {
+  .avantage,
+  .contact-container-accueil {
+    width: 100%;
     border: 2px solid $color1;
     border-radius: 20px;
     box-shadow: 1px 1px 1px $blackShadow;
@@ -45,10 +50,6 @@
 
   @media screen and (max-width: 1296px) {
     background: url(../img/bg3.webp) center/cover;
-  }
-
-  h2 {
-    color: $white1;
   }
 
   .services-container {
@@ -142,6 +143,25 @@
       }
       h3 {
         padding: 15px 20px;
+      }
+    }
+  }
+}
+
+.nous-contacter {
+  width: 100%;
+  background: url(../img/bg2.webp) fixed center/cover;
+  .nous-contacter-wrapper {
+    .contact-container-accueil {
+      background: $white1;
+      a {
+        color: $text;
+        text-decoration: none;
+        cursor: pointer;
+
+        &:hover {
+          color: $color1;
+        }
       }
     }
   }
