@@ -384,6 +384,11 @@ footer .social-icons i:hover {
   background: url(../img/bg3.webp) fixed center/cover;
   width: 100%;
 }
+@media screen and (max-width: 1296px) {
+  .services {
+    background: url(../img/bg3.webp) center/cover;
+  }
+}
 .services h2 {
   color: #fff;
 }
