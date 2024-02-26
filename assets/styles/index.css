@@ -280,6 +280,9 @@ main section a p {
 main section a p small {
   font-size: 0.8rem;
 }
+main section .title-service {
+  margin-top: 30px;
+}
 
 section {
   width: 85%;
