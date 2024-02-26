@@ -510,6 +510,11 @@ footer .social-icons i:hover {
   width: 100%;
   background: url(../img/bg2.webp) fixed center/cover;
 }
+@media screen and (max-width: 1296px) {
+  .nous-contacter {
+    background: url(../img/bg2.webp) center/cover;
+  }
+}
 .nous-contacter .nous-contacter-wrapper .contact-container-accueil {
   background: #fff;
 }
