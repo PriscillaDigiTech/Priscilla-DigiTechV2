@@ -105,6 +105,10 @@ header {
       a {
         color: $white1;
         text-decoration: none;
+        @media screen and (max-width: 1296px) {
+          width: 100%;
+          height: 100%;
+        }
       }
       &:hover {
         transform: translateY(-5px);
